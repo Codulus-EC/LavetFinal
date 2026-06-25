@@ -1,0 +1,632 @@
+<!doctype html>
+
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+        <link rel="icon" type="image/png" href="images/logo.png">
+
+    <title>ЛАВЕТ.РФ</title>
+    <meta
+      content="Ветеринарная клиника ЛАВЕТ в Воронеже: услуги для кошек, собак, птиц и других животных, контакты и запись на прием."
+      name="description"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__shell">
+        <div class="header__full">
+          <div class="header__top">
+            <div class="header__brand">
+              <img alt="ЛАВЕТ" class="header__logo" src="images/logo.png" />
+            </div>
+            <p class="header__address">
+              •Воронеж, улица 20-летия Октября, 105/1 - Ежедневно 9:00-21:00•
+            </p>
+            <div class="header__contacts">
+              <div class="header__phone-icon">
+                <img alt="Телефон" src="images/phone.png" />
+              </div>
+              <div class="header__phones">
+                <a
+                  class="header__phone header__phone--muted"
+                  href="tel:+79529573120"
+                >
+                  +7 952 957 - 31 - 20
+                </a>
+                <a
+                  class="header__phone header__phone--main"
+                  href="tel:+74732400120"
+                >
+                  +7 (473) 2-400-120
+                </a>
+                <a
+                  class="header__phone header__phone--muted"
+                  href="tel:+79529509085"
+                >
+                  +7 952 950 - 90 - 85
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="header__line"></div>
+        </div>
+        <div class="header__bottom">
+          <nav aria-label="Главное меню" class="header__nav">
+            <a class="header__link" href="index.html#hero">Главная</a>
+            <a class="header__link" href="services.html">Услуги</a>
+            <a class="header__link" href="articles.html">Статьи</a>
+            <a class="header__link" href="about.html">О нас</a>
+            <a class="header__link" href="#contacts">Контакты</a>
+          </nav>
+          <div class="header__mini">
+            <span class="header__mini-address">
+              •Воронеж, улица 20-летия Октября, 105/1
+            </span>
+            <a class="header__mini-phone" href="tel:+74732400120">
+              <img alt="Телефон" src="images/phone.png" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero__overlay"></div>
+        <button
+          aria-label="Предыдущий слайд"
+          class="hero__arrow hero__arrow--left"
+          type="button"
+        >
+          ‹
+        </button>
+        <button
+          aria-label="Следующий слайд"
+          class="hero__arrow hero__arrow--right"
+          type="button"
+        >
+          ›
+        </button>
+        <div class="hero__content">
+          <p class="hero__label">Общая информация</p>
+          <h1 class="hero__title">ЛАВЕТ.РФ</h1>
+          <p class="hero__subtitle">
+            Ветеринарная практика<br />
+            с 1997 года
+          </p>
+          <a class="hero__button" href="#contacts">
+            Связаться с нами<br />
+            уже сейчас!
+          </a>
+        </div>
+        <div class="hero__dots">
+          <button
+            aria-label="Слайд 1"
+            class="hero__dot hero__dot--active"
+            type="button"
+          ></button>
+          <button aria-label="Слайд 2" class="hero__dot" type="button"></button>
+          <button aria-label="Слайд 3" class="hero__dot" type="button"></button>
+        </div>
+      </section>
+      <section class="services" id="services">
+        <div class="services__container">
+          <h2 class="services__title">Наши услуги</h2>
+          <div class="services__list">
+            <article class="service-row service-row--cat">
+              <img
+                alt="Кот"
+                class="service-row__image service-row__image--cat"
+                src="images/cat2.png"
+              />
+              <div class="service-row__content">
+                <h3 class="service-row__title">Коты и кошки</h3>
+                <div class="service-row__chips">
+                  <button
+                    class="service-chip service-chip--large"
+                    data-price="1 850 р."
+                    data-service="Комплексная вакцинация кошек"
+                    type="button"
+                  >
+                    Комплексная вакцинация<span></span>
+                  </button>
+                  <button
+                    class="service-chip service-chip--medium"
+                    data-price="1 200 р."
+                    data-service="Вакцинация от лейкоза кошек"
+                    type="button"
+                  >
+                    Вакцинация от лейкоза<span></span>
+                  </button>
+                  <button
+                    class="service-chip service-chip--large"
+                    data-price="от 7 000 до 9 500 р."
+                    data-service="Стерилизация кошек"
+                    type="button"
+                  >
+                    Стерилизация кошек<span></span>
+                  </button>
+                  <button
+                    class="service-chip service-chip--medium"
+                    data-price="1 800 р."
+                    data-service="Первичный прием кошки"
+                    type="button"
+                  >
+                    Первичный прием<span></span>
+                  </button>
+                  <button
+                    class="service-chip service-chip--medium"
+                    data-price="1 300 р."
+                    data-service="Вторичный прием кошки"
+                    type="button"
+                  >
+                    Вторичный прием<span></span>
+                  </button>
+                  <button
+                    class="service-chip service-chip--medium"
+                    data-price="4 000 р."
+                    data-service="Кастрация кота"
+                    type="button"
+                  >
+                    Кастрация кота<span></span>
+                  </button>
+                  <button
+                    class="service-chip service-chip--large"
+                    data-price="от 1 500 р."
+                    data-service="Лечение ЖКТ-заболеваний у кошек"
+                    type="button"
+                  >
+                    Лечение ЖКТ<span></span>
+                  </button>
+                  <button
+                    class="service-chip service-chip--medium"
+                    data-price="500 - 1 000 р."
+                    data-service="Чистка ушей"
+                    type="button"
+                  >
+                    Чистка ушей<span></span>
+                  </button>
+                </div>
+                <a class="service-row__all" href="services.html#cats"
+                  >Все услуги</a
+                >
+              </div>
+            </article>
+            <article class="service-row service-row--dog">
+              <div class="service-row__content">
+                <h3 class="service-row__title">Собаки</h3>
+                <div class="service-row__chips">
+                  <button
+                    class="service-chip service-chip--large"
+                    data-price="1 850 р."
+                    data-service="Комплексная вакцинация собак"
+                    type="button"
+                  >
+                    Комплексная вакцинация<span></span>
+                  </button>
+                  <button
+                    class="service-chip service-chip--medium"
+                    data-price="1 000 р."
+                    data-service="Чипирование собаки"
+                    type="button"
+                  >
+                    Чипирование<span></span>
+                  </button>
+                  <button
+                    class="service-chip service-chip--medium"
+                    data-price="1 800 р."
+                    data-service="Первичный прием собаки"
+                    type="button"
+                  >
+                    Первичный прием<span></span>
+                  </button>
+                  <button
+                    class="service-chip service-chip--medium"
+                    data-price="1 300 р."
+                    data-service="Вторичный прием собаки"
+                    type="button"
+                  >
+                    Вторичный прием<span></span>
+                  </button>
+                  <button
+                    class="service-chip service-chip--medium"
+                    data-price="7 000 - 9 500 р."
+                    data-service="Кастрация кобелей"
+                    type="button"
+                  >
+                    Кастрация кобелей<span></span>
+                  </button>
+                  <button
+                    class="service-chip service-chip--medium"
+                    data-price="от 7 500 до 15 000 р."
+                    data-service="Стерилизация сук"
+                    type="button"
+                  >
+                    Стерилизация сук<span></span>
+                  </button>
+                  <button
+                    class="service-chip service-chip--medium"
+                    data-price="1 500 р."
+                    data-service="Снятие клеща"
+                    type="button"
+                  >
+                    Снятие клеща<span></span>
+                  </button>
+                  <button
+                    class="service-chip service-chip--large"
+                    data-price="от 1 500 р."
+                    data-service="Лечение ЖКТ-заболеваний у собак"
+                    type="button"
+                  >
+                    Лечение ЖКТ<span></span>
+                  </button>
+                  <button
+                    class="service-chip service-chip--medium"
+                    data-price="500 р."
+                    data-service="Обработка от паразитов"
+                    type="button"
+                  >
+                    Обработка паразитов<span></span>
+                  </button>
+                  <button
+                    class="service-chip service-chip--medium"
+                    data-price="500 - 1 000 р."
+                    data-service="Обрезка когтей"
+                    type="button"
+                  >
+                    Обрезка когтей<span></span>
+                  </button>
+                </div>
+                <a class="service-row__all" href="services.html#dogs"
+                  >Все услуги</a
+                >
+              </div>
+              <img
+                alt="Собака"
+                class="service-row__image service-row__image--dog"
+                src="images/dog.png"
+              />
+            </article>
+            <article class="service-row service-row--bird">
+              <img
+                alt="Птица"
+                class="service-row__image service-row__image--bird"
+                src="images/bird.png"
+              />
+              <div class="service-row__content">
+                <h3 class="service-row__title">Птицы</h3>
+                <div class="service-row__chips">
+                  <button
+                    class="service-chip service-chip--medium"
+                    data-price="2 500 р."
+                    data-service="Первичный прием птицы"
+                    type="button"
+                  >
+                    Первичный прием птицы<span></span>
+                  </button>
+                  <button
+                    class="service-chip service-chip--medium"
+                    data-price="1 500 р."
+                    data-service="Вторичный прием птицы"
+                    type="button"
+                  >
+                    Вторичный прием птицы<span></span>
+                  </button>
+                  <button
+                    class="service-chip service-chip--large"
+                    data-price="2 500 р."
+                    data-service="Хирургическая обработка ран"
+                    type="button"
+                  >
+                    Обработка ран<span></span>
+                  </button>
+                  <button
+                    class="service-chip service-chip--medium"
+                    data-price="1 500 р."
+                    data-service="Обработка от кнемидокаптоза"
+                    type="button"
+                  >
+                    Кнемидокаптоз<span></span>
+                  </button>
+                  <button
+                    class="service-chip service-chip--xlarge"
+                    data-price="500 - 1 500 р."
+                    data-service="Обрезка когтей и клюва"
+                    type="button"
+                  >
+                    Обрезка клюва и когтей<span></span>
+                  </button>
+                  <button
+                    class="service-chip service-chip--large"
+                    data-price="1 500 р."
+                    data-service="Диагностика экто и эндопаразитозов"
+                    type="button"
+                  >
+                    Диагностика паразитов<span></span>
+                  </button>
+                  <button
+                    class="service-chip service-chip--large"
+                    data-price="2 000 р."
+                    data-service="Удаление инородного тела"
+                    type="button"
+                  >
+                    Удаление инородного тела<span></span>
+                  </button>
+                  <button
+                    class="service-chip service-chip--medium"
+                    data-price="500 р."
+                    data-service="Забор крови у птицы"
+                    type="button"
+                  >
+                    Забор крови<span></span>
+                  </button>
+                </div>
+                <a class="service-row__all" href="services.html#birds"
+                  >Все услуги</a
+                >
+              </div>
+            </article>
+            <article class="exotic-service">
+              <div class="exotic-service__content">
+                <p class="exotic-service__label">Индивидуальный прием</p>
+                <h3 class="exotic-service__title">Другие животные</h3>
+                <p class="exotic-service__text">
+                  Ветеринарная помощь шиншиллам, кроликам, хомякам, крысам,
+                  мышам, черепахам, хорькам, белкам и экзотическим животным
+                  разрабатывается и оказывается индивидуально для каждого
+                  пациента.
+                </p>
+                <div class="exotic-service__tags">
+                  <span>🐰 Кролики</span>
+                  <span>🐹 Грызуны</span>
+                  <span>🐢 Черепахи</span>
+                  <span>🦦 Хорьки</span>
+                  <span>🦎 Экзотические животные</span>
+                </div>
+                <a class="exotic-service__button" href="#contacts">
+                  Уточнить возможность приема
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="articles" id="articles">
+        <h2 class="articles__title">Статьи</h2>
+        <div class="articles__stack">
+          <button
+            aria-label="Предыдущая статья"
+            class="articles__arrow articles__arrow--left"
+            type="button"
+          >
+            ‹
+          </button>
+          <button
+            aria-label="Следующая статья"
+            class="articles__arrow articles__arrow--right"
+            type="button"
+          >
+            ›
+          </button>
+          <div class="articles__cards">
+            <article class="article-card">
+              <div class="article-card__top">
+                <span>13 апреля 2026</span>
+                <span>↗</span>
+              </div>
+              <h3>Домашние питомцы и дети</h3>
+              <p>
+                Домашние питомцы не заменяют детей, а помогают семье привыкнуть
+                к заботе и ответственности. Особенно часто такую роль берут на
+                себя собаки.
+              </p>
+              <div class="article-card__bottom">
+                <a href="articles.html">Читать статью</a>
+              </div>
+            </article>
+            <article class="article-card">
+              <div class="article-card__top">
+                <span>13 апреля 2026</span>
+                <span>↗</span>
+              </div>
+              <h3>Вакцинация попугаев</h3>
+              <p>
+                В России нет зарегистрированных вакцин для попугаев, поэтому для
+                профилактики болезни Ньюкасла иногда используют более мягкие
+                препараты для голубей.
+              </p>
+              <div class="article-card__bottom">
+                <a href="articles.html">Читать статью</a>
+              </div>
+            </article>
+            <article class="article-card">
+              <div class="article-card__top">
+                <span>12 апреля 2026</span>
+                <span>↗</span>
+              </div>
+              <h3>Регионы-лидеры по количеству приютов</h3>
+              <p>
+                Больше всего приютов для животных работает в Санкт-Петербурге,
+                Московской области, Москве, Пермском крае и Ханты-Мансийском
+                округе.
+              </p>
+              <div class="article-card__bottom">
+                <a href="articles.html">Читать статью</a>
+              </div>
+            </article>
+            <article class="article-card">
+              <div class="article-card__top">
+                <span>12 апреля 2026</span>
+                <span>↗</span>
+              </div>
+              <h3>Поздравление с Пасхой</h3>
+              <p>
+                Ветеринарная клиника поздравляет владельцев животных с Пасхой и
+                желает питомцам здоровья, спокойствия и только плановых визитов.
+              </p>
+              <div class="article-card__bottom">
+                <a href="articles.html">Читать статью</a>
+              </div>
+            </article>
+            <article class="article-card">
+              <div class="article-card__top">
+                <span>10 апреля 2026</span>
+                <span>↗</span>
+              </div>
+              <h3>Проверки ветеринарных препаратов</h3>
+              <p>
+                ВГНКИ провел инспекции зарубежных производств ветеринарных
+                препаратов для подготовки новых лекарственных средств к выходу
+                на российский рынок.
+              </p>
+              <div class="article-card__bottom">
+                <a href="articles.html">Читать статью</a>
+              </div>
+            </article>
+            <article class="article-card">
+              <div class="article-card__top">
+                <span>2 марта 2026</span>
+                <span>↗</span>
+              </div>
+              <h3>Первая операция и любовь к профессии</h3>
+              <p>
+                История о первой серьезной операции, хирургическом опыте и
+                важности наставничества в ветеринарной медицине.
+              </p>
+              <div class="article-card__bottom">
+                <a href="articles.html">Читать статью</a>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="articles__footer">
+          <span></span>
+          <a href="articles.html">Смотреть все статьи</a>
+          <span></span>
+        </div>
+      </section>
+      <section class="contact-banner">
+        <div class="contact-banner__overlay"></div>
+        <div class="contact-banner__content">
+          <h2>Остались вопросы?</h2>
+          <p>Ответим на все!</p>
+          <a href="#contacts">
+            Связаться с нами<br />
+            уже сейчас!
+          </a>
+        </div>
+      </section>
+      <section class="contacts" id="contacts">
+        <div class="contacts__card">
+          <div class="contacts__info">
+            <h2>Наши контакты</h2>
+            <p class="contacts__address">
+              Воронеж, улица 20-летия Октября, 105/1
+            </p>
+            <h3>Время работы:</h3>
+            <p>
+              запись на прием с <span>09:00 до 20:00</span><br />
+              прием ведется до последнего пациента
+            </p>
+            <h3>Номера телефонов:</h3>
+            <div class="contacts__phones">
+              <a href="tel:+79529573120">+7 952 957 - 31 - 20</a>
+              <a href="tel:+74732400120">+7 (473) 2-400-120</a>
+              <a href="tel:+79529509085">+7 952 950 - 90 - 85</a>
+            </div>
+            <h3>Почта:</h3>
+            <a class="contacts__mail" href="mailto:lavetsu@gmail.com"
+              >lavetsu@gmail.com</a
+            >
+            <h3>Наши соцсети:</h3>
+            <div class="contacts__socials">
+              <a
+                href="https://dzen.ru/lai"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <img alt="Дзен" src="images/dzen.png" />
+              </a>
+              <a
+                href="https://vk.com/lavetsu"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <img alt="ВКонтакте" src="images/vkontakte.png" />
+              </a>
+              <a
+                href="https://max.ru/join/wyg72N_m1N2C3UY8F99Uicor6BFWWMHnTZg_X-L6ok4"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <img alt="MAX" src="images/max.jpg" />
+              </a>
+            </div>
+            <p class="contacts__note">
+              У нас много познавательного и полезного для вас и для ваших
+              питомцев
+            </p>
+          </div>
+          <div class="contacts__map-wrap">
+            <div class="contacts__map-line"></div>
+            <div class="contacts__map-frame">
+              <iframe
+                allowfullscreen=""
+                class="contacts__map"
+                loading="lazy"
+                src="https://yandex.ru/map-widget/v1/?mode=search&amp;text=Lavet%20%D0%92%D0%BE%D1%80%D0%BE%D0%BD%D0%B5%D0%B6%2020-%D0%BB%D0%B5%D1%82%D0%B8%D1%8F%20%D0%9E%D0%BA%D1%82%D1%8F%D0%B1%D1%80%D1%8F%20105%2F1&amp;z=18"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <p class="contacts__copy">ООО ЛАВЕТБИО 2026 ©</p>
+      </section>
+      <footer class="site-footer"></footer>
+    </main>
+    <div aria-hidden="true" class="service-modal" id="serviceModal">
+      <div class="service-modal__overlay"></div>
+      <div
+        aria-labelledby="serviceModalTitle"
+        aria-modal="true"
+        class="service-modal__window"
+        role="dialog"
+      >
+        <button aria-label="Закрыть" class="service-modal__close" type="button">
+          ×
+        </button>
+        <p class="service-modal__label">Запись на услугу</p>
+        <h2 class="service-modal__title" id="serviceModalTitle">
+          <span class="service-modal__service">Название услуги</span>
+        </h2>
+        <p class="service-modal__price">
+          Стоимость: <span class="service-modal__cost">Цена уточняется</span>
+        </p>
+        <p class="service-modal__text">
+          Свяжитесь с нами по телефону, и мы поможем подобрать удобное время
+          приема.
+        </p>
+        <a class="service-modal__phone" href="tel:+74732400120">
+          +7 (473) 2-400-120
+        </a>
+        <div class="service-modal__actions">
+          <a
+            class="service-modal__btn service-modal__btn--primary"
+            href="#contacts"
+          >
+            Продолжить запись
+          </a>
+          <a
+            class="service-modal__btn service-modal__btn--secondary"
+            href="tel:+74732400120"
+          >
+            Позвонить
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js" defer></script>
+  </body>
+</html>

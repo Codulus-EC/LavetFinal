@@ -1,0 +1,439 @@
+.about-page {
+    min-height: 100vh;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.header__link--active {
+    color: #9440d5;
+}
+
+.about-hero {
+    position: relative;
+    min-height: 100vh;
+    padding: 170px 20px 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url("../images/about-bg.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-hero__content {
+    max-width: 960px;
+    margin-top: 90px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.about-hero__label {
+    margin: 0 0 20px;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.about-hero__title {
+    margin: 0 0 26px;
+    font-size: 104px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.about-hero__text {
+    max-width: 860px;
+    margin: 0 auto;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.45;
+}
+
+.about-clinic {
+    padding: 110px 20px 130px;
+    background: linear-gradient(180deg, #e4dfd8 0%, #c8d7ef 35%, #8cb5ff 100%);
+}
+
+.about-clinic__container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.about-clinic__head {
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.about-clinic__head h2 {
+    position: relative;
+    width: max-content;
+    margin: 0 auto 34px;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1;
+    color: #ffffff;
+    text-shadow: 0 8px 14px rgba(0, 0, 0, 0.25);
+}
+
+.about-clinic__head h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -18px;
+    width: 420px;
+    height: 2px;
+    transform: translateX(-50%);
+    background: rgba(90, 90, 90, 0.38);
+}
+
+.about-clinic__head p {
+    max-width: 760px;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 1.45;
+    color: #ffffff;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+}
+
+.about-clinic__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.about-card {
+    min-height: 280px;
+    padding: 34px 34px 38px;
+    border-radius: 32px;
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 18px 42px rgba(38, 56, 96, 0.16);
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 26px 54px rgba(38, 56, 96, 0.23);
+}
+
+.about-card--large {
+    grid-column: span 3;
+    min-height: auto;
+}
+
+.about-card h3 {
+    margin: 0 0 18px;
+    font-size: 34px;
+    font-weight: 700;
+    color: #111111;
+}
+
+.about-card p {
+    margin: 0;
+    font-size: 21px;
+    line-height: 1.62;
+    color: #222222;
+}
+
+.chief {
+    padding: 120px 20px 130px;
+    background: #ffffff;
+}
+
+.chief__container {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 70px;
+    align-items: start;
+}
+
+.chief__photo {
+    position: sticky;
+    top: 150px;
+    overflow: hidden;
+    border-radius: 34px;
+    background: #f4f7ff;
+    box-shadow: 0 24px 54px rgba(38, 56, 96, 0.18);
+}
+
+.chief__photo img {
+    display: block;
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+}
+
+.chief__label {
+    width: max-content;
+    margin: 0 0 18px;
+    padding: 10px 22px;
+    border-radius: 999px;
+    background: rgba(148, 64, 213, 0.12);
+    font-size: 19px;
+    font-weight: 700;
+    color: #9440d5;
+}
+
+.chief__content h2 {
+    margin: 0 0 22px;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 1.08;
+    color: #111111;
+}
+
+.chief__lead {
+    max-width: 780px;
+    margin: 0 0 42px;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.45;
+    color: #333333;
+}
+
+.chief__blocks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 26px;
+}
+
+.chief-info {
+    padding: 30px;
+    border-radius: 28px;
+    background: #eef4ff;
+    box-shadow: 0 14px 34px rgba(38, 56, 96, 0.1);
+}
+
+.chief-info--wide {
+    grid-column: span 2;
+}
+
+.chief-info h3 {
+    margin: 0 0 18px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #111111;
+}
+
+.chief-info p,
+.chief-info li {
+    font-size: 19px;
+    line-height: 1.58;
+    color: #222222;
+}
+
+.chief-info p + p {
+    margin-top: 16px;
+}
+
+.chief-info ul {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin: 0;
+    padding-left: 22px;
+}
+
+.about-values {
+    padding: 100px 20px 120px;
+    background: linear-gradient(180deg, #e8f0ff 0%, #d3e2ff 100%);
+}
+
+.about-values__container {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.about-values h2 {
+    margin: 0 0 60px;
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+    color: #111111;
+}
+
+.about-values__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.value-card {
+    padding: 34px;
+    border-radius: 30px;
+    background: #ffffff;
+    box-shadow: 0 16px 38px rgba(38, 56, 96, 0.12);
+}
+
+.value-card span {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #9440d5;
+}
+
+.value-card h3 {
+    margin: 0 0 16px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #111111;
+}
+
+.value-card p {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.55;
+    color: #333333;
+}
+
+@media (max-width: 1100px) {
+    .about-hero {
+        min-height: 720px;
+    }
+
+    .about-hero__title {
+        font-size: 78px;
+    }
+
+    .about-hero__text {
+        font-size: 24px;
+    }
+
+    .about-clinic__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-card--large {
+        grid-column: span 1;
+    }
+
+    .chief__container {
+        grid-template-columns: 1fr;
+    }
+
+    .chief__photo {
+        position: relative;
+        top: auto;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .chief__content h2,
+    .chief__lead {
+        text-align: center;
+    }
+
+    .chief__label {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-values__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 760px) {
+    .about-hero {
+        min-height: 560px;
+        padding: 130px 16px 70px;
+    }
+
+    .about-hero__content {
+        margin-top: 40px;
+    }
+
+    .about-hero__label {
+        font-size: 22px;
+    }
+
+    .about-hero__title {
+        font-size: 54px;
+    }
+
+    .about-hero__text {
+        font-size: 19px;
+    }
+
+    .about-clinic {
+        padding: 80px 16px 90px;
+    }
+
+    .about-clinic__head h2 {
+        font-size: 44px;
+    }
+
+    .about-clinic__head h2::after {
+        width: 240px;
+    }
+
+    .about-clinic__head p {
+        font-size: 19px;
+    }
+
+    .about-card {
+        padding: 26px;
+        border-radius: 26px;
+    }
+
+    .about-card h3 {
+        font-size: 28px;
+    }
+
+    .about-card p {
+        font-size: 18px;
+    }
+
+    .chief {
+        padding: 80px 16px 90px;
+    }
+
+    .chief__photo img {
+        height: 420px;
+    }
+
+    .chief__content h2 {
+        font-size: 38px;
+    }
+
+    .chief__lead {
+        font-size: 21px;
+    }
+
+    .chief__blocks {
+        grid-template-columns: 1fr;
+    }
+
+    .chief-info--wide {
+        grid-column: span 1;
+    }
+
+    .chief-info {
+        padding: 24px;
+    }
+
+    .chief-info h3 {
+        font-size: 26px;
+    }
+
+    .chief-info p,
+    .chief-info li {
+        font-size: 17px;
+    }
+
+    .about-values {
+        padding: 80px 16px 90px;
+    }
+
+    .about-values h2 {
+        font-size: 42px;
+    }
+}
